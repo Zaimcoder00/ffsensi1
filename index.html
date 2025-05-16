@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Price</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="price.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Deadly <span>Sensi</span>
+        </div>
+        <div class="maincontainer">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="#">About Sensi</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+        <i class="fa fa-bars hamburg" onclick="toggleMenu()"></i>
+        <div class="dropdown">
+            <a href="home.html">Home</a>
+            <a href="#">About Sensi</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+            <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <section class="Pricing">
+        <div class="card">
+            <h2>Basic</h2>
+            <p>Unique Sensi</p>
+            <p>Optimization (config, antilag)</p>
+            <p>No recoil (doesn't spread shots)</p>
+            <p>Special Bonus!!</p>
+            <button>$9</button>
+        </div>
+        <div class="card">
+            <h2>Pro</h2>
+            <p>VIP SENSI</p>
+            <p>Pro HeadTracker</p>
+            <p>No recoil</p>
+            <p>Optimization</p>
+            <p>Special Bonus!!</p>
+            <button>$11</button>
+        </div>
+        <div class="card">
+            <h2>Elite</h2>
+            <p>ALL in one Pack!!!</p>
+            <button>$17</button>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
