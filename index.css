@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    background-image: url("Screenshot 2025-04-05 022932.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: rgb(240, 98, 98);
+    text-shadow: 0 0 10px rgb(240, 98, 98);
+}
+
+.maincontainer {
+    display: flex;
+    align-items: center;
+}
+
+.maincontainer .links {
+    display: flex;
+    gap: 20px;
+}
+
+.maincontainer .links a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.maincontainer .links a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.hamburg {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: black;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.dropdown.active {
+    display: block;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: red;
+    color: black;
+}
+
+.cancel {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .maincontainer {
+        display: none;
+    }
+
+    .hamburg {
+        display: block;
+    }
+}
+
+/* Pricing Section */
+.Pricing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 2px red;
+    color: black;
+    margin: 8px 0;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
